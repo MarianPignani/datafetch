@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(15, 15, 15);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(155, 144, 51);
+    border-radius: 25px;
+}
+
+  
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(15, 15, 15, 0.815);
+}
+
+.container-header {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 280px;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+}
+
+.lists {
+    list-style-type: none;  
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-right: 45px;
+    padding: 0;
+}
+
+.list {
+    display: inline-block;
+}
+
+.menu {
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.8s;
+    padding: 6px 20px 6px 20px;
+}
+
+.menu:hover {
+    color: rgb(155, 144, 51)
+}
+
+.main {
+    width: 100%;
+    background-color: white;
+}
+.intro {
+    height: auto;
+    padding-top: 180px;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    padding-bottom: 120px;
+}
+
+
+.title {
+    font-size: 75px;
+    text-align: center;
+    color: rgb(155, 144, 51)
+}
+
+.presentation {
+    font-size: 35px;
+    text-align: center;
+    color: rgb(175, 175, 175);
+    padding-top: 30px;
+}
+
+.p-presentation {
+    font-size: 28px;
+    text-align: center;
+    color:rgb(175, 175, 175);
+    padding-top: 15px;
+}
+
+.btn-contact {
+    text-align: center;
+    justify-self: center;
+    padding-top: 45px;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    color: rgb(155, 144, 51);
+    font-size: 15px;
+    font-weight: 580;
+    border-radius: 14px;
+    border-color: rgb(155, 144, 51);
+    background-color: rgb(15, 15, 15);
+    transition: 0.8s;
+}
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    background-color: rgb(155, 144, 51);
+    border-color: rgb(155, 144, 51);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 8px rgba(155, 145, 51, 0.733);
+}
+    
+.our-mission {
+    height: auto;
+    background-color: rgb(18, 18, 18);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-container {
+    width: 600px;
+    text-align: center;
+}
+
+.title-mission {
+    font-size: 20px;
+    font-weight: 450;
+    text-align: center;
+    color: rgb(155, 144, 51)
+}
+
+.p-color {
+    color: rgb(155, 144, 51);
+}
+
+.p-mission {
+    font-size: 35px;
+    text-align: center;
+    color: rgb(175, 175, 175);
+    margin-top: 40px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 25px;
+    background: linear-gradient(to left, rgba(18, 18, 18), rgba(26, 26, 26, 0.877), rgba(18, 18, 18)) ;
+}
+
+.logo-df {
+    width: 20px;
+    text-align: center;
+    margin-top: 40px;
+    transition: 1.4s;
+    cursor: pointer;
+}
+
+.logo-df:hover {
+    transform: rotate(1turn);
+}
+
+.how {
+    height: auto;
+    background-color: rgb(15, 15, 15);
+    padding-bottom: 90px;
+    padding-top: 90px;
+    display: block;
+    justify-content: center;
+}
+
+.title-how {
+    font-size: 20px;
+    font-weight: 450;
+    text-align: center;
+    color: rgb(155, 144, 51)
+}
+
+.cards-container {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 240px 240px 240px;
+    grid-column-gap: 50px;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgba(255, 254, 254, 0.075);
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    display: grid;
+    border-radius: 20px;
+    transition: 1s !important;
+}
+
+.card:hover {   
+    box-shadow: 0 0 13px rgba(155, 145, 51, 0.733)
+}
+
+.title-card {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 480;
+    padding-bottom: 10px;
+    border-bottom: solid 1px;
+    border-color: rgba(155, 145, 51, 0.836);
+}
+
+.p-card {
+    text-align: center;
+    color: rgb(175, 175, 175);
+}
+
+.why-us {
+    height: auto;
+    background-color: rgb(18, 18, 18);
+    padding-bottom: 90px;
+    padding-top: 90px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-why {
+    font-size: 20px;
+    font-weight: 450;
+    text-align: center;
+    color: rgb(155, 144, 51)
+}
+
+.rows {
+    width: 700px;
+    height: auto;
+    padding-top: 45px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    gap: 25px;
+    justify-content: center;
+}
+
+.row-left {
+    width: 650px;
+    display: grid;
+    justify-content: start;
+}
+
+.row-right {
+    width: 650px;
+    display: grid;
+    justify-content: end;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    background-image: linear-gradient(to left, rgba(155, 145, 51, 0.5), rgb(15,15,15));
+    transition: 0.7s;
+}
+
+.row:hover {
+    transform: scale(1.03);
+}
+
+.title-row {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 480;
+
+}
+
+.p-row {
+    color: rgb(175, 175, 175);
+    padding-left: 40px;
+}
+
+.contact {
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+}
+
+.contact-container {
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.div-contact {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.img-contact {
+    width: 200px;
+    
+}
+
+.div-icons {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 30px;
+}
+
+.icon-footer {
+    width: 20px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.icon-footer:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 3px rgba(155, 145, 51, 0.733));
+}
+
+.p-contact {
+    color: rgb(175, 175, 175);
+    font-size: 14px;
+}
+
+.copy {
+    display: grid;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    align-items: center;
+    height: 30px;
+}
+    
+
+.copy-right {
+    background-color: rgb(8, 8, 8);
+    color: rgb(175, 175, 175);
+    text-align: center;
+}
+
+
+
