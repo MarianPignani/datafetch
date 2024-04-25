@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: "Raleway", sans-serif;
     scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
     width: 7px;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(28, 28, 28);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -21,7 +23,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 99;
-    background-color: rgba(15, 15, 15, 0.815);
+    background-color: rgba(28, 28, 28, 0.800);
 }
 
 .container-header {
@@ -48,6 +50,7 @@ header {
 .lists {
     list-style-type: none;  
     text-align: center;
+    font-weight: 450;
     color: white;
     margin: 0;
     margin-right: 45px;
@@ -77,10 +80,10 @@ header {
 }
 .intro {
     height: auto;
-    padding-top: 180px;
+    padding-top: 200px;
     justify-content: center;
-    background-color: rgb(15, 15, 15);
-    padding-bottom: 120px;
+    background-color: rgb(28, 28, 28);
+    padding-bottom: 150px;
 }
 
 
@@ -119,7 +122,7 @@ header {
     font-weight: 580;
     border-radius: 14px;
     border-color: rgb(155, 144, 51);
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(28, 28, 28);
     transition: 0.8s;
 }
 .btn:hover {
@@ -127,13 +130,13 @@ header {
     transform: scale(1.03);
     background-color: rgb(155, 144, 51);
     border-color: rgb(155, 144, 51);
-    color: rgb(0, 0, 0);
+    color: rgb(28, 28, 28);
     box-shadow: 0 0 8px rgba(155, 145, 51, 0.733);
 }
     
 .our-mission {
     height: auto;
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(32, 32, 32);
     padding-top: 90px;
     padding-bottom: 90px;
     display: flex;
@@ -147,8 +150,8 @@ header {
 }
 
 .title-mission {
-    font-size: 20px;
-    font-weight: 450;
+    font-size: 30px;
+    font-weight: 500;
     text-align: center;
     color: rgb(155, 144, 51)
 }
@@ -165,7 +168,7 @@ header {
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 25px;
-    background: linear-gradient(to left, rgba(18, 18, 18), rgba(26, 26, 26, 0.877), rgba(18, 18, 18)) ;
+    background: linear-gradient(to left, rgba(32, 32, 32), rgba(40, 40, 40, 0.877), rgba(32, 32, 32)) ;
 }
 
 .logo-df {
@@ -182,7 +185,7 @@ header {
 
 .how {
     height: auto;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(28, 28, 28);
     padding-bottom: 90px;
     padding-top: 90px;
     display: block;
@@ -190,16 +193,43 @@ header {
 }
 
 .title-how {
-    font-size: 20px;
-    font-weight: 450;
+    font-size: 30px;
+    font-weight: 500;
     text-align: center;
     color: rgb(155, 144, 51)
+}
+
+.div-icon-how {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 240px 240px 240px;
+    grid-column-gap: 50px;
+    padding-top: 70px;
+}
+
+.icon-container {
+    display: grid;
+    justify-content: center;
+}
+
+.how-icon {
+    background-color: rgba(255, 254, 254, 0.075);
+    width: 60px;
+    border-radius: 25%;
+    padding: 9px;
+    transition: 1s;
+}
+
+.how-icon-opt {
+    width: 20px;
 }
 
 .cards-container {
     width: 100%;
     height: auto;
-    padding-top: 70px;
+    padding-top: 50px;
     margin-bottom: 80px;
     display: grid;
     grid-template-columns: 240px 240px 240px;
@@ -207,18 +237,19 @@ header {
     justify-content: center;
 }
 
+.container-icon-card:hover .shadow {
+    box-shadow: 0 0 8px rgba(155, 145, 51, 0.712)
+}
+
 .card {
     background-color: rgba(255, 254, 254, 0.075);
     width: 100%;
-    height: 300px;
+    height: 310px;
     padding: 20px;
+    margin-top: 20px;
     display: grid;
     border-radius: 20px;
     transition: 1s !important;
-}
-
-.card:hover {   
-    box-shadow: 0 0 13px rgba(155, 145, 51, 0.733)
 }
 
 .title-card {
@@ -231,6 +262,8 @@ header {
     border-color: rgba(155, 145, 51, 0.836);
 }
 
+
+
 .p-card {
     text-align: center;
     color: rgb(175, 175, 175);
@@ -238,7 +271,7 @@ header {
 
 .why-us {
     height: auto;
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(32, 32, 32);
     padding-bottom: 90px;
     padding-top: 90px;
     display: grid;
@@ -247,8 +280,8 @@ header {
 }
 
 .title-why {
-    font-size: 20px;
-    font-weight: 450;
+    font-size: 30px;
+    font-weight: 500;
     text-align: center;
     color: rgb(155, 144, 51)
 }
@@ -283,7 +316,7 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 50px;
-    background-image: linear-gradient(to left, rgba(155, 145, 51, 0.5), rgb(15,15,15));
+    background-image: linear-gradient(to left, rgba(155, 145, 51, 0.5), rgb(28,28,28));
     transition: 0.7s;
 }
 
@@ -305,12 +338,12 @@ header {
 }
 
 .contact {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(28, 28, 28);
     width: 100%;
 }
 
 .contact-container {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(28, 28, 28);
     width: 100%;
     padding-top: 50px;
     padding-bottom: 40px;
@@ -323,7 +356,8 @@ header {
     display: grid;
     align-items: center;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
     text-align: center;
     padding-top: 20px;
 }
@@ -336,19 +370,19 @@ header {
 .div-icons {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
     padding-top: 30px;
 }
 
 .icon-footer {
-    width: 20px;
+    width: 22px;
     transition: 0.8s;
     cursor: pointer;
 }
 
 .icon-footer:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 3px rgba(155, 145, 51, 0.733));
+    transform: scale(1.2);
 }
 
 .p-contact {
@@ -359,14 +393,14 @@ header {
 .copy {
     display: grid;
     width: 100%;
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(24, 24, 24);
     align-items: center;
     height: 30px;
 }
     
 
 .copy-right {
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(24, 24, 24);
     color: rgb(175, 175, 175);
     text-align: center;
 }
