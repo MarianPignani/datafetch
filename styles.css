@@ -160,8 +160,8 @@ header {
 
 .div-commitment {
     display: grid;
-    grid-template-columns: 27% 27% 46%;
-    grid-gap: 24px;
+    grid-template-columns: 22% 22% 56%;
+    grid-gap: 26px;
     padding: 35px;
     border-radius: 10px;
     margin-top: 50px;
@@ -170,41 +170,43 @@ header {
     background: rgba(78, 78, 78, 0.877);
 }
 
+
 .div3 {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 13px;
+    grid-template-rows: auto auto;
     padding-left: 25px;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    width: 212px;
+    place-items: center ;
+}
+
+.div2 {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding-right: 25px;
+    width: 212px;
+    place-items: center ;
 }
 
 .title-mission {
     color: rgb(175, 175, 175);
-    padding-bottom: 7px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .p-mission {
     color: rgb(175, 175, 175);
-}
-
-.img-mission {
-    width: 110px;
-}
-
-.img-vision {
-    width: 110px;
+    padding-top: 9px;
 }
 
 .title-vision {
     color: rgb(175, 175, 175);
-    padding-bottom: 7px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .p-vision {
     color: rgb(175, 175, 175);
+    padding-top: 9px;
 }
 
 .div-p-comm {
@@ -219,6 +221,7 @@ header {
     font-size: 24px;
     text-align: left;
     color: rgb(238, 238, 238);
+    padding-left: 18px;
 }
 
 .logo-df {
@@ -262,10 +265,6 @@ header {
     transition: 1s;
 }
 
-.how-icon-opt {
-    width: 20px;
-}
-
 .cards-container {
     width: 100%;
     height: auto;
@@ -301,8 +300,6 @@ header {
     border-bottom: solid 1px;
     border-color: rgba(155, 145, 51, 0.836);
 }
-
-
 
 .p-card {
     text-align: center;
@@ -446,4 +443,207 @@ header {
 }
 
 
+@media (min-width: 1900px) and (max-width: 4500px) {
+
+    .logo {
+        width: 380px;
+    }
+
+    .menu {
+        font-size: 28px;
+    }
+
+    .intro {
+        padding-top: 340px;
+        padding-bottom: 320px;
+    }
+
+    .title {
+        font-size: 92px;
+    }
+
+    .presentation {
+        font-size: 45px;
+        padding-top: 32px;
+    }
+
+    .p-presentation {
+        font-size: 34px;
+        padding-top: 18px;
+    }
+
+    .btn {
+        width: 134px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .our-commitment {
+        padding-top: 160px;
+        padding-bottom: 120px;
+    }
+
+    .commitment-container {
+        height: 500px;
+        width: 1390px;
+    }
+
+    .title-commitment {
+        font-size: 40px;
+    }
+
+    .div-commitment {
+        padding: 50px;
+        height: 250px;
+        width: 1390px;
+        margin-top: 80px;
+    }
+
+    .title-mission {
+        font-size: 24px;
+    }
+
+    .title-vision {
+        font-size: 24px;
+    }
+
+    .p-mission {
+        font-size: 18px;
+        padding-top: 12px;
+    }
+
+    .p-vision {
+        font-size: 18px;
+        padding-top: 12px;
+    }
+
+    .p-commitment {
+        font-size: 28px;
+        padding-left: 2px;
+    }
+
+    .logo-df {
+        width: 28px;
+        margin-top: 80px;
+    }
+
+    .how {
+        padding-top: 100px;
+    }
+
+    .title-how {
+        font-size: 40px;
+    }
+
+    .how-icon {
+        width: 68px;
+        padding: 10px;
+    }
+    
+    
+    .cards-container {
+        margin-bottom: 100px;
+        grid-template-columns: 260px 260px 260px;
+        grid-column-gap: 70px;
+    }
+    
+    .card {
+        height: 345px;
+        margin-top: 25px;
+    }
+    
+    .title-card {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    
+    .p-card {
+        font-size: 18px;
+    }
+
+    .why-us {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+    
+    .title-why {
+        font-size: 40px;
+    }
+    
+    .rows {
+        width: 1100px;
+        padding-top: 80px;
+        grid-template-rows: 120px 120px 120px;
+        gap: 45px;
+    }
+    
+    .row-left {
+        width: 900px;
+    }
+    
+    .row-right {
+        width: 900px;
+    }
+    
+    .row {
+        width: 700px;
+        height: 110px;
+        padding-left: 24px;
+        padding-right: 20px;
+    }
+    
+    .title-row {
+        font-size: 26px;
+    
+    }
+    
+    .p-row {
+        font-size: 22px;
+        padding-left: 30px;
+    }
+    
+    .contact-container {
+        padding-top: 65px;
+        padding-bottom: 55px;
+    }
+    
+    .div-contact {
+        grid-gap: 20px;
+        padding-top: 25px;
+    }
+    
+    .img-contact {
+        width: 300px;
+        
+    }
+    
+    .div-icons {
+        grid-gap: 25px;
+        padding-top: 45px;
+    }
+    
+    .icon-footer {
+        width: 25px;
+    }
+    
+    .p-contact {
+        font-size: 20px;
+    }
+    
+    .copy {
+        height: 45px;
+    }
+
+    .copy-right {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+}
+
+@media screen and (max-width: 350px) {
+
+}
 
