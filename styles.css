@@ -21,6 +21,7 @@ body::-webkit-scrollbar-thumb {
   
 header {
     width: 100%;
+    display: flex;
     position: fixed;
     z-index: 99;
     background-color: rgba(40, 40, 40, 0.800);
@@ -29,8 +30,10 @@ header {
 .container-header {
     width: 100%;
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -40,21 +43,21 @@ header {
     cursor: pointer;
 }
 
+
+.open {
+    display: none;
+}
+
 .navbar {
-    display: grid;
-    width: 100%;
-    align-items: center;
-    justify-content: end;
+    margin-right: 30px;
 }
 
 .lists {
+    display: flex;
     list-style-type: none;  
     text-align: center;
     font-weight: 450;
     color: white;
-    margin: 0;
-    margin-right: 45px;
-    padding: 0;
 }
 
 .list {
@@ -168,6 +171,9 @@ header {
     justify-content: center;
     align-items: center;
     background: rgba(78, 78, 78, 0.877);
+    margin-left: min(20px);
+    margin-right: min(20px);
+    
 }
 
 
@@ -396,20 +402,12 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 28px;
 }
 
 .img-contact {
     width: 200px;
     
-}
-
-.div-icons {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
-    padding-top: 30px;
 }
 
 .icon-footer {
@@ -423,8 +421,9 @@ header {
 }
 
 .p-contact {
-    color: rgb(175, 175, 175);
+    color: rgb(212, 212, 212);
     font-size: 14px;
+    margin-top: 8px;
 }
 
 .copy {
@@ -443,7 +442,7 @@ header {
 }
 
 
-@media (min-width: 1900px) and (max-width: 4500px) {
+@media (min-width: 1800px) and (max-width: 4500px) {
 
     .logo {
         width: 380px;
@@ -539,7 +538,6 @@ header {
         width: 68px;
         padding: 10px;
     }
-    
     
     .cards-container {
         margin-bottom: 100px;
@@ -639,11 +637,352 @@ header {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 945px) {
 
+    .open {
+        display: block;
+        border: 0;
+        padding-right: 25px;
+        background-color: transparent;
+        cursor: pointer;
+        
+    }
+
+    .menu-h {
+        width: 22px;
+        transition: 0.7s;
+    }
+
+    .menu-h:hover {
+        transform: scale(1.06);
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(44, 44, 44);
+        justify-content: center;
+        font-size: 20px;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .lists {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-weight: 450;
+        color: white;
+    }
+    
+    .list {
+        display: inline-block;
+    }
+    
+    .menu {
+        display: block;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        transition: 0.8s;
+        padding: 6px 20px 6px 20px;
+    }
+    
+    .menu:hover {
+        color: rgb(155, 144, 51)
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+
+    .title {
+        font-size: 60px;
+    }
+
+    .presentation {
+        font-size: 30px;
+        padding-top: 28px;
+    }
+
+    .p-presentation {
+        font-size: 26px;
+        padding-top: 15px;
+    }
+
+    .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+    }
+}    
+
+@media screen and (max-width: 845px) {
+    .our-commitment {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+
+    .commitment-container {
+        height: 450px;
+        width: 580px;
+    }
+
+    .title-commitment {
+        font-size: 30px;
+    }
+
+    .div-commitment {
+        padding: 30;
+        grid-gap: 20px;
+        height: 200px;
+        width: 580px;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .div3 {
+        display: grid;
+        grid-template-rows: auto auto;
+        padding-left: 0px;
+        width: 120px;
+        place-items: center ;
+    }
+    
+    .div2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        padding-right: 0px;
+        width: 120px;
+        place-items: center ;
+    }
+    
+
+    .title-mission {
+        font-size: 18px;
+    }
+
+    .title-vision {
+        font-size: 18px;
+    }
+
+    .p-mission {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .p-vision {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .div-p-comm {
+        padding-right: 0px;
+    }
+
+    .p-commitment {
+        font-size: 20px;
+        padding-left: 2px;
+    }
+
+    .logo-df {
+        width: 20px;
+    }
+
+    .cards-container {
+        height: auto;
+        padding-bottom: 70px;
+        grid-template-columns: none;
+        grid-template-rows: 305px 305px 305px;
+        grid-gap: 170px;
+    }
+    
+    .card {
+        width: 230px;
+        height: 305px;
+    }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 180px;
+        margin-left: 20px;
+    }
 
+    .menu-h {
+        width: 22px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .presentation {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+
+    .p-presentation {
+        font-size: 22px;
+        padding-top: 15px;
+    }
+
+    .btn {
+    width: 100px;
+    height: 35px;
+    font-size: 13px;
+    }
+
+    .our-commitment {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+
+    .commitment-container {
+        width: auto;
+        height: auto;
+    }
+
+    .title-commitment {
+        font-size: 25px;
+    }
+
+    .div-commitment {
+        grid-template-columns: none;
+        grid-template-rows: 30% 30% 40%;
+        padding-top: 5px;
+        grid-gap: 14px;
+        height: 400px;
+        width: 310px;
+    }
+    
+    .div3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 270px;
+        text-align: center;
+    }
+    
+    .div2 {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+    }
+
+    .p-commitment {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .logo-df {
+        width: 20px;
+    }
+
+    .how {
+        padding-top: 90px;
+    }
+
+    .title-how {
+        font-size: 25px;
+    }
+
+    .how-icon {
+        width: 58px;
+        padding: 9px;
+    }
+
+    .title-card {
+        font-size: 22px;
+    }
+
+    
+    .title-why {
+        font-size: 25px;
+    }
+    
+    .rows {
+        width: 345px;
+        height: auto;
+    }
+    
+    .row-left {
+        width: 345px;
+    }
+    
+    .row-right {
+        width: 345px;
+    }
+    
+    .row {
+        width: 340px;
+        height: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .title-row {
+        font-size: 17px;
+    
+    }
+    
+    .p-row {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+
+    .contact-container {
+        background-color: rgb(40, 40, 40);
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .div-contact {
+        grid-template-columns: none;
+        padding-top: 30px;
+        justify-content: center;
+    }
+
+    .int {
+        display: flex;
+        gap: 10px
+    }
+    
+    .img-contact {
+        width: 200px;
+        justify-content: center;
+    }
+    
+    .icon-footer {
+        width: 19px;
+    }
+    
+    .p-contact {
+        font-size: 14px;
+        margin-top: 0;
+    }
+    
+    .copy {
+        height: 25px;
+    }
+        
+    
+    
 }
 

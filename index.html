@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="We provide data services for small and medium companies all over the world. We specialize in data extracting, storage, process automation and visualization. We help you take the best decisions with the best information.">
+        <meta name="keywords" content="Data analytics, Analysis, Data storage, Process automation, AI, Consultancy
+        Data, Experts in data, Data services, Personalized services, Services for companies, Automation, Data Visualization, Visualizations, Real-time information, Information services, Information generation	Reporting, Business Intelligence for companies, Big Data, Data-driven decision-making,	Data insights, Data modelling, Statistical analysis, Data warehousing, Data strategy, Data science, Data Integration">
+        <meta name="description" content="Ofrecemos servicios de datos para pequeñas y medianas empresas en todo el mundo. Nos especializamos en extracción de datos, almacenamiento, automatización de procesos y visualización. Te ayudamos a tomar las mejores decisiones con la mejor información." lang="es">
+        <meta name="keywords" content="Análisis de datos, Almacenamiento de datos, Automatización de procesos, IA, Consultoría de datos, Expertos en datos, Servicios de datos, Servicios personalizados, Servicios para empresas, Automatización, Visualización de datos, Visualizaciones, Información en tiempo real, Servicios de información, Generación de información, Informes, Inteligencia de negocios para empresas, Big Data, Toma de decisiones basada en datos, Percepciones de datos, Modelado de datos, Análisis estadístico, Almacenamiento de datos, Estrategia de datos, Ciencia de datos, Integración de datos." lang="es">
         <meta name="author" content="DataFetch">
         <meta name="copyright" content="DataFetch">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,13 +19,14 @@
         <header>
             <div class="container-header">
                 <a href="#intro"><img class="logo" src="img/logo-df.png" alt="Company Logo"></a>
-                <nav class="navbar">
+                <button class="open" id="open"><img class="menu-h" src="img/menu.png" alt="menu"></button>
+                <nav class="navbar" id="navbar">
                     <ul class="lists">
-                        <li class="list"><a class="menu" href="#intro">Intro</a></li>
-                        <li class="list"><a class="menu" href="#our-commitment">Our Commitment</a></li>
-                        <li class="list"><a class="menu" href="#how">How</a></li>
-                        <li class="list"><a class="menu" href="#why-us">Why us</a></li>
-                        <li class="list"><a class="menu" href="#contact">Contact</a></li>
+                        <li class="list"><a class="menu" id="one" href="#intro">Intro</a></li>
+                        <li class="list"><a class="menu" id="two" href="#our-commitment">Our Commitment</a></li>
+                        <li class="list"><a class="menu" id="three" href="#how">How</a></li>
+                        <li class="list"><a class="menu" id="four" href="#why-us">Why us</a></li>
+                        <li class="list"><a class="menu" id="five" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -128,17 +132,23 @@
                     <div>
                         <img class="img-contact" src="img/Black logo - no background-svg.png" alt="Logo Company">
                     </div>
-                    <div class="div-icons">
-                        <p><img class="icon-footer" src="img/icons-email.png" alt="Email"></p>
-                        <p><img class="icon-footer" src="img/icons-whatsapp.png" alt="Phone"></p>
-                        <a href="https://www.linkedin.com/company/datafetchanalytics/" target="_blank"><p><img class="icon-footer" src="img/linkedin.png" alt="Linkedin"></p></a>
-                        <p><img class="icon-footer" src="img/icons-adress.png" alt="Adress"></p>
-                    </div>
                     <div class="div-contact">
-                        <p class="p-contact">email@datafetch.com</p>
-                        <p class="p-contact">+34 673 147 680</p>
-                        </a><p class="p-contact">/datafetchanalytics</p>
-                        <p class="p-contact">Valencia, Spain</p>
+                        <div class="int">
+                            <p><img class="icon-footer" src="img/icons-email.png" alt="Email"></p>
+                            <p class="p-contact">email@datafetch.com</p>
+                        </div>
+                        <div class="int">
+                            <a href="https://wa.me/34673147680?text=" target="_blank"><p><img class="icon-footer" src="img/icons-whatsapp.png" alt="Phone"></p></a>
+                            <p class="p-contact">+34 673 147 680</p>
+                        </div>
+                        <div class="int">
+                            <a href="https://www.linkedin.com/company/datafetchanalytics/" target="_blank"><p><img class="icon-footer" src="img/linkedin.png" alt="Linkedin"></p></a>
+                            <p class="p-contact">/datafetchanalytics</p>
+                        </div>
+                        <div class="int">
+                            <p><img class="icon-footer" src="img/icons-adress.png" alt="Adress"></p>
+                            <p class="p-contact">Valencia, Spain</p>
+                        </div>
                     </div>
                 </div>
                 <div class="copy">
@@ -152,5 +162,6 @@
                 duration: 1000
             });
         </script>
+        <script src="./menu.js"></script>
     </body>
 </html>
