@@ -163,7 +163,7 @@ header {
 
 .div-commitment {
     display: grid;
-    grid-template-columns: 22% 22% 56%;
+    grid-template-columns: 21% 21% 58%;
     grid-gap: 26px;
     padding: 35px;
     border-radius: 10px;
@@ -176,20 +176,18 @@ header {
     
 }
 
-
 .div3 {
     display: grid;
     grid-template-rows: auto auto;
     padding-left: 25px;
-    width: 212px;
+    width: 200px;
     place-items: center ;
 }
 
 .div2 {
     display: grid;
     grid-template-rows: auto auto;
-    padding-right: 25px;
-    width: 212px;
+    width: 200px;
     place-items: center ;
 }
 
@@ -866,7 +864,7 @@ header {
         padding-top: 5px;
         grid-gap: 14px;
         height: 400px;
-        width: 310px;
+        width: 300px;
     }
     
     .div3 {
@@ -914,33 +912,33 @@ header {
     }
     
     .rows {
-        width: 345px;
+        width: 326px;
         height: auto;
     }
     
     .row-left {
-        width: 345px;
+        width: 326px;
     }
     
     .row-right {
-        width: 345px;
+        width: 326px;
     }
     
     .row {
-        width: 340px;
+        width: 326px;
         height: 80px;
         padding-left: 16px;
         padding-right: 16px;
     }
     
     .title-row {
-        font-size: 17px;
+        font-size: 16px;
     
     }
     
     .p-row {
         font-size: 14px;
-        padding-left: 20px;
+        padding-left: 17px;
     }
 
     .contact-container {
