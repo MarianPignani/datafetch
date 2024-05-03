@@ -17,7 +17,6 @@ body::-webkit-scrollbar-thumb {
     background: rgb(155, 144, 51);
     border-radius: 25px;
 }
-
   
 header {
     width: 100%;
@@ -42,7 +41,6 @@ header {
     margin-left: 45px;
     cursor: pointer;
 }
-
 
 .open {
     display: none;
@@ -81,6 +79,7 @@ header {
     width: 100%;
     background-color: white;
 }
+
 .intro {
     height: auto;
     padding-top: 200px;
@@ -88,7 +87,6 @@ header {
     background-color: rgb(40, 40, 40);
     padding-bottom: 150px;
 }
-
 
 .title {
     font-size: 75px;
@@ -128,6 +126,7 @@ header {
     background-color: rgb(40, 40, 40);
     transition: 0.8s;
 }
+
 .btn:hover {
     cursor: pointer;
     transform: scale(1.03);
@@ -151,7 +150,6 @@ header {
     width: 1200px;
     height: 430px;
     text-align: center;
-
 }
 
 .title-commitment {
@@ -173,7 +171,6 @@ header {
     background: rgba(78, 78, 78, 0.877);
     margin-left: min(20px);
     margin-right: min(20px);
-    
 }
 
 .div3 {
@@ -370,7 +367,6 @@ header {
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 480;
-
 }
 
 .p-row {
@@ -404,8 +400,7 @@ header {
 }
 
 .img-contact {
-    width: 200px;
-    
+    width: 200px;   
 }
 
 .icon-footer {
@@ -419,6 +414,7 @@ header {
 }
 
 .p-contact {
+    text-decoration: none;
     color: rgb(212, 212, 212);
     font-size: 14px;
     margin-top: 8px;
@@ -430,15 +426,13 @@ header {
     background-color: rgb(34, 34, 34);
     align-items: center;
     height: 30px;
-}
-    
+}   
 
 .copy-right {
     background-color: rgb(34, 34, 34);
     color: rgb(175, 175, 175);
     text-align: center;
 }
-
 
 @media (min-width: 1800px) and (max-width: 4500px) {
 
@@ -590,7 +584,6 @@ header {
     
     .title-row {
         font-size: 26px;
-    
     }
     
     .p-row {
@@ -640,9 +633,9 @@ header {
     .open {
         display: block;
         border: 0;
-        padding-right: 25px;
         background-color: transparent;
         cursor: pointer;
+        padding-right: 25px;
         
     }
 
@@ -666,6 +659,7 @@ header {
         left: 0;
         right: 0;
         height: 100vh;
+        width: 100%;
         position: absolute;
         opacity: 0;
         visibility: hidden;
@@ -704,7 +698,6 @@ header {
     .logo {
         width: 250px;
     }
-
 
     .title {
         font-size: 60px;
@@ -766,8 +759,7 @@ header {
         padding-right: 0px;
         width: 120px;
         place-items: center ;
-    }
-    
+    }    
 
     .title-mission {
         font-size: 18px;
@@ -906,26 +898,25 @@ header {
         font-size: 22px;
     }
 
-    
     .title-why {
         font-size: 25px;
     }
     
     .rows {
-        width: 326px;
+        width: 320px;
         height: auto;
     }
     
     .row-left {
-        width: 326px;
+        width: 320px;
     }
     
     .row-right {
-        width: 326px;
+        width: 320px;
     }
     
     .row {
-        width: 326px;
+        width: 320px;
         height: 80px;
         padding-left: 16px;
         padding-right: 16px;
@@ -979,8 +970,5 @@ header {
     .copy {
         height: 25px;
     }
-        
-    
-    
 }
 
