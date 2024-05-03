@@ -420,6 +420,11 @@ header {
     margin-top: 8px;
 }
 
+.phone-number {
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+}
+
 .copy {
     display: grid;
     width: 100%;
