@@ -5,6 +5,7 @@ const closedT = document.querySelector("#two");
 const closedTh = document.querySelector("#three");
 const closedF = document.querySelector("#four");
 const closedFi = document.querySelector("#five");
+const closedS = document.querySelector("#six");
 
 
 open.addEventListener("click", () => {
@@ -28,5 +29,9 @@ closedF.addEventListener("click", () => {
 })
 
 closedFi.addEventListener("click", () => {
+    navbar.classList.remove("visible");
+})
+
+closedS.addEventListener("click", () => {
     navbar.classList.remove("visible");
 })
